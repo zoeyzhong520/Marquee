@@ -37,7 +37,7 @@
 ///createMarqueeBar
 - (void)createMarqueeBar {
     
-    _maskView = [[UIView alloc] initWithFrame:CGRectMake(50, 100, 100, 50)];
+    _maskView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, self.view.bounds.size.width, 50)];
     [self.view addSubview:_maskView];
     _maskView.backgroundColor = [UIColor lightGrayColor];
     _maskView.clipsToBounds = YES;
